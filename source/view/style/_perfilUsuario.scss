@@ -1,0 +1,138 @@
+// @media screen and (max-width:760px) {
+//     .container-perfil {
+//         grid-template-rows: 33rem auto !important;
+//     }
+// }
+
+.container-perfil {
+    height: auto !important; 
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-between;
+    padding: 2rem;
+    margin: 0.7rem;
+}
+
+.container-div {
+    display: flex;
+    align-self: flex-start;
+    justify-content: center;
+}
+
+.stats-categorias {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container {
+    //border: solid 1px $color_principal;
+    border-radius: 1rem;
+    width: 60rem;
+    gap: 5px;
+    padding: 1rem;
+    margin: 10px;
+    // box-shadow: 8px 8px 13px -7px $color_principal;
+    background: transparent;
+}
+
+.main-body {
+    padding: 15px;
+}
+
+.card {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: $color_background_secundario;
+    background-clip: border-box;
+    border: 0 solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1rem;
+}
+
+.gutters-sm {
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.gutters-sm>.col,
+.gutters-sm>[class*=col-] {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.mb-3,
+.my-3 {
+    margin-bottom: 1rem !important;
+}
+
+.bg-gray-300 {
+    background-color: #e2e8f0;
+}
+
+.h-100 {
+    height: 100% !important;
+}
+
+.shadow-none {
+    box-shadow: none !important;
+}
+
+.btn-edit-profile {
+    display: flex;
+    justify-content: end;
+}
+
+.colorHoverCat {
+    text-decoration: none;
+    color: black;
+}
+
+.colorHoverCat:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.card.am {
+    height: 100%;
+}
+
+
+p#texto{
+    font-size: 1.5rem;
+	text-align: center;
+	color:white;
+}
+
+div#div_file{
+	position:relative;
+	margin:50px;
+	padding:10px;
+	width:150px;
+    height: 60px;
+	background-color: #2499e3;
+	border-radius:5px;
+	box-shadow:0px 3px 0px #1a71a9;
+}
+
+input#btn_enviar{
+	position:absolute;
+	top:0px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	width:100%;
+	height:100%;
+	opacity: 0;
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: Referencia del Archivo asset/reproducMailer/push_email.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.3 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_5dec16b9d433c08f249d3436fd467356.html">asset</a></li><li class="navelem"><a class="el" href="dir_6837025bd7ac4997a30fdcfb0f6acb4a.html">reproducMailer</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle"><div class="title">Referencia del Archivo push_email.php</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a61ca55cbd560b4be3bd7319975ca5992"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="push__email_8php.html#a61ca55cbd560b4be3bd7319975ca5992">composerMail</a> ($user, $email)</td></tr>
+<tr class="separator:a61ca55cbd560b4be3bd7319975ca5992"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="a61ca55cbd560b4be3bd7319975ca5992" name="a61ca55cbd560b4be3bd7319975ca5992"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61ca55cbd560b4be3bd7319975ca5992">&#9670;&nbsp;</a></span>composerMail()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">composerMail </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$user</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$email</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">    8</span>{</div>
+<div class="line"><span class="lineno">    9</span>    require <span class="stringliteral">&quot;vendor/autoload.php&quot;</span>;</div>
+<div class="line"><span class="lineno">   10</span>    $mail = <span class="keyword">new</span> <a class="code hl_namespace" href="namespace_p_h_p_mailer.html">PHPMailer</a>();</div>
+<div class="line"><span class="lineno">   11</span> </div>
+<div class="line"><span class="lineno">   12</span>    $mail-&gt;IsSMTP();</div>
+<div class="line"><span class="lineno">   13</span>    <span class="comment">// cambiar a 0 para no ver mensajes de error</span></div>
+<div class="line"><span class="lineno">   14</span>    $mail-&gt;SMTPDebug = 0;</div>
+<div class="line"><span class="lineno">   15</span>    <span class="comment">//  Establece la autentificación SMTP. Por defecto a False</span></div>
+<div class="line"><span class="lineno">   16</span>    $mail-&gt;SMTPAuth = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   17</span>    $mail-&gt;SMTPSecure = <span class="stringliteral">&quot;tls&quot;</span>;</div>
+<div class="line"><span class="lineno">   18</span>    <span class="comment">//  Establece el servidor SMTP. Pueden ser varios separados por ;</span></div>
+<div class="line"><span class="lineno">   19</span>    $mail-&gt;Host = <span class="stringliteral">&quot;smtp.gmail.com&quot;</span>;</div>
+<div class="line"><span class="lineno">   20</span>    $mail-&gt;Port = 587;</div>
+<div class="line"><span class="lineno">   21</span> </div>
+<div class="line"><span class="lineno">   22</span>    <span class="comment">// Introducir usuario de google</span></div>
+<div class="line"><span class="lineno">   23</span>    $mail-&gt;Username = <span class="stringliteral">&quot;david42fragoso@gmail.com&quot;</span>;</div>
+<div class="line"><span class="lineno">   24</span>    <span class="comment">// Introducir clave</span></div>
+<div class="line"><span class="lineno">   25</span>    $mail-&gt;Password = <span class="stringliteral">&quot;fragoso42&quot;</span>;</div>
+<div class="line"><span class="lineno">   26</span>    $mail-&gt;SetFrom(<span class="stringliteral">&#39;david42fragoso@gmail.com&#39;</span>, <span class="stringliteral">&#39;Te has registrado correctamente en Notigames !!&#39;</span>);</div>
+<div class="line"><span class="lineno">   27</span>    <span class="comment">/*</span></div>
+<div class="line"><span class="lineno">   28</span><span class="comment"> * Para especificar el asunto. Utilizamos la función utf8_decode para que muestre</span></div>
+<div class="line"><span class="lineno">   29</span><span class="comment"> * correctamente los acentos.</span></div>
+<div class="line"><span class="lineno">   30</span><span class="comment"> */</span></div>
+<div class="line"><span class="lineno">   31</span>    $mail-&gt;Subject = utf8_decode(<span class="stringliteral">&quot;Registro Notigames&quot;</span>);</div>
+<div class="line"><span class="lineno">   32</span>    $texto = <span class="stringliteral">&#39;&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;</span></div>
+<div class="line"><span class="lineno">   33</span><span class="stringliteral">    &lt;title&gt;Notigames&lt;/title&gt;&lt;meta charset = &quot;UTF-8&quot;&gt;&lt;/head&gt;</span></div>
+<div class="line"><span class="lineno">   34</span><span class="stringliteral">    &lt;body&gt;      </span></div>
+<div class="line"><span class="lineno">   35</span><span class="stringliteral">        &lt;h1&gt;Bienvenido al equipo, disfruta de los beneficios del foro.&lt;/h1&gt;</span></div>
+<div class="line"><span class="lineno">   36</span><span class="stringliteral">        &lt;p&gt;</span></div>
+<div class="line"><span class="lineno">   37</span><span class="stringliteral">            Username : &#39;</span> . <a class="code hl_variable" href="controller_registro_8php.html#a598ca4e71b15a1313ec95f0df1027ca5">$user</a> . <span class="stringliteral">&#39;</span></div>
+<div class="line"><span class="lineno">   38</span><span class="stringliteral">        &lt;/p&gt;</span></div>
+<div class="line"><span class="lineno">   39</span><span class="stringliteral">        &lt;p&gt;</span></div>
+<div class="line"><span class="lineno">   40</span><span class="stringliteral">        Email : &#39;</span> . <a class="code hl_variable" href="controller_registro_8php.html#ad634f418b20382e2802f80532d76d3cd">$email</a> . <span class="stringliteral">&#39;</span></div>
+<div class="line"><span class="lineno">   41</span><span class="stringliteral">    &lt;/p&gt;</span></div>
+<div class="line"><span class="lineno">   42</span><span class="stringliteral">    &lt;/body&gt;</span></div>
+<div class="line"><span class="lineno">   43</span><span class="stringliteral">&lt;/html&gt;&#39;</span>;</div>
+<div class="line"><span class="lineno">   44</span>    <span class="comment">// cuerpo</span></div>
+<div class="line"><span class="lineno">   45</span>    $mail-&gt;MsgHTML($texto);</div>
+<div class="line"><span class="lineno">   46</span>    <span class="comment">/*</span></div>
+<div class="line"><span class="lineno">   47</span><span class="comment"> * bool AddAttachment ( $path, $name, [$encoding = &quot;base64&quot;], [$type = &quot;application/octet-stream&quot;] )    </span></div>
+<div class="line"><span class="lineno">   48</span><span class="comment"> * Añade un fichero adjunto al mensaje. Retorna false si el fichero no pudo ser encontrado.</span></div>
+<div class="line"><span class="lineno">   49</span><span class="comment"> * $path, es la ruta del archivo puede ser relativa al script php (no a la clase PHPMailer) </span></div>
+<div class="line"><span class="lineno">   50</span><span class="comment"> * o una ruta absoluta. Se aconseja usar rutas relativas</span></div>
+<div class="line"><span class="lineno">   51</span><span class="comment"> * $name, nombre del fichero</span></div>
+<div class="line"><span class="lineno">   52</span><span class="comment"> * $encoding, tipo de codificación. Se aconseja dejar la predeterminada</span></div>
+<div class="line"><span class="lineno">   53</span><span class="comment"> * $type, el valor por defecto funciona con cualquier clase de archivo. Se puede </span></div>
+<div class="line"><span class="lineno">   54</span><span class="comment"> * usar un tipo específico como por ejemplo image/jpeg</span></div>
+<div class="line"><span class="lineno">   55</span><span class="comment"> */</span></div>
+<div class="line"><span class="lineno">   56</span>    $mail-&gt;addAttachment(<span class="stringliteral">&quot;../img/index.jpeg&quot;</span>);</div>
+<div class="line"><span class="lineno">   57</span> </div>
+<div class="line"><span class="lineno">   58</span>    <span class="comment">// destinatario</span></div>
+<div class="line"><span class="lineno">   59</span>    $address = <span class="stringliteral">&quot;davi123fragoso@gmail.com&quot;</span>;</div>
+<div class="line"><span class="lineno">   60</span>    <span class="comment">/*</span></div>
+<div class="line"><span class="lineno">   61</span><span class="comment"> * AddAddress   void AddAddress ( $address, $name )     </span></div>
+<div class="line"><span class="lineno">   62</span><span class="comment"> * Añade una dirección de destino del mensaje. El parámetro $name es opcional</span></div>
+<div class="line"><span class="lineno">   63</span><span class="comment"> */</span></div>
+<div class="line"><span class="lineno">   64</span>    $mail-&gt;AddAddress($address, <span class="stringliteral">&quot;Destinatario correo&quot;</span>);</div>
+<div class="line"><span class="lineno">   65</span> </div>
+<div class="line"><span class="lineno">   66</span>    <span class="comment">/*</span></div>
+<div class="line"><span class="lineno">   67</span><span class="comment"> * bool Send ( )        </span></div>
+<div class="line"><span class="lineno">   68</span><span class="comment"> * Envía el mensaje, devuelve false si ha habido algún problema. </span></div>
+<div class="line"><span class="lineno">   69</span><span class="comment"> * Consultando la propiedad ErrorInfo se puede saber cuál ha sido el problema</span></div>
+<div class="line"><span class="lineno">   70</span><span class="comment"> */</span></div>
+<div class="line"><span class="lineno">   71</span>    $resul = $mail-&gt;Send();</div>
+<div class="line"><span class="lineno">   72</span> </div>
+<div class="line"><span class="lineno">   73</span>    <span class="keywordflow">if</span> (!$resul) {</div>
+<div class="line"><span class="lineno">   74</span>        echo <span class="stringliteral">&quot;Error&quot;</span> . $mail-&gt;ErrorInfo;</div>
+<div class="line"><span class="lineno">   75</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   76</span>        echo <span class="stringliteral">&quot;&lt;br&gt;Enviado correctamente&quot;</span>;</div>
+<div class="line"><span class="lineno">   77</span>    }</div>
+<div class="line"><span class="lineno">   78</span>}</div>
+<div class="ttc" id="acontroller_registro_8php_html_a598ca4e71b15a1313ec95f0df1027ca5"><div class="ttname"><a href="controller_registro_8php.html#a598ca4e71b15a1313ec95f0df1027ca5">$user</a></div><div class="ttdeci">$user</div><div class="ttdef"><b>Definition:</b> controllerRegistro.php:22</div></div>
+<div class="ttc" id="acontroller_registro_8php_html_ad634f418b20382e2802f80532d76d3cd"><div class="ttname"><a href="controller_registro_8php.html#ad634f418b20382e2802f80532d76d3cd">$email</a></div><div class="ttdeci">$email</div><div class="ttdef"><b>Definition:</b> controllerRegistro.php:18</div></div>
+<div class="ttc" id="anamespace_p_h_p_mailer_html"><div class="ttname"><a href="namespace_p_h_p_mailer.html">PHPMailer</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Martes, 15 de Marzo de 2022 20:01:13 para My Project por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
+</small></address>
+</body>
+</html>

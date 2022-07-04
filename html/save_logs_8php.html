@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: Referencia del Archivo asset/logs/saveLogs.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.3 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_5dec16b9d433c08f249d3436fd467356.html">asset</a></li><li class="navelem"><a class="el" href="dir_471062f57441d4e768f0c106536ed01d.html">logs</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle"><div class="title">Referencia del Archivo saveLogs.php</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a906f9085ac7fa62ba55aec49c7ec018a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="save_logs_8php.html#a906f9085ac7fa62ba55aec49c7ec018a">saveLogs</a> ()</td></tr>
+<tr class="separator:a906f9085ac7fa62ba55aec49c7ec018a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="a906f9085ac7fa62ba55aec49c7ec018a" name="a906f9085ac7fa62ba55aec49c7ec018a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a906f9085ac7fa62ba55aec49c7ec018a">&#9670;&nbsp;</a></span>saveLogs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">saveLogs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Funcion para guardar los logs del login por nombre/id_usuario/fecha_login. </p>
+<div class="fragment"><div class="line"><span class="lineno">    8</span>{</div>
+<div class="line"><span class="lineno">    9</span>    $fecha = date(<span class="stringliteral">&#39;d-m-Y H:i:s&#39;</span>);</div>
+<div class="line"><span class="lineno">   10</span>    <span class="keywordflow">if</span> (!file_exists(<span class="stringliteral">&quot;logs.xml&quot;</span>)) {</div>
+<div class="line"><span class="lineno">   11</span> </div>
+<div class="line"><span class="lineno">   12</span>        $xstr = <span class="stringliteral">&#39;&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;logs/&gt;&#39;</span>;</div>
+<div class="line"><span class="lineno">   13</span>        $xml = simplexml_load_string($xstr);</div>
+<div class="line"><span class="lineno">   14</span> </div>
+<div class="line"><span class="lineno">   15</span>        $log = $xml-&gt;addChild(<span class="stringliteral">&#39;log&#39;</span>);</div>
+<div class="line"><span class="lineno">   16</span>        $login = $log-&gt;addChild(<span class="stringliteral">&#39;login&#39;</span>);</div>
+<div class="line"><span class="lineno">   17</span>        $login-&gt;addAttribute(<span class="stringliteral">&#39;id&#39;</span>, 1);</div>
+<div class="line"><span class="lineno">   18</span>        $login-&gt;addChild(<span class="stringliteral">&#39;id&#39;</span>, <a class="code hl_variable" href="controller_subida_foto_8php.html#a70b5243de15e10bbfc73053a780b08aa">$_SESSION</a>[<span class="stringliteral">&quot;ID&quot;</span>]);</div>
+<div class="line"><span class="lineno">   19</span>        $login-&gt;addChild(<span class="stringliteral">&#39;nombre&#39;</span>, <a class="code hl_variable" href="controller_subida_foto_8php.html#a70b5243de15e10bbfc73053a780b08aa">$_SESSION</a>[<span class="stringliteral">&quot;nombre&quot;</span>]);</div>
+<div class="line"><span class="lineno">   20</span>        $login-&gt;addChild(<span class="stringliteral">&#39;fecha&#39;</span>, $fecha);</div>
+<div class="line"><span class="lineno">   21</span>        $xml-&gt;asXML(<span class="stringliteral">&#39;logs.xml&#39;</span>);</div>
+<div class="line"><span class="lineno">   22</span> </div>
+<div class="line"><span class="lineno">   23</span>        <span class="comment">//rename(&quot;/codigoapp/logs.xml&quot;, &quot;/codigoapp/asset/log/logs.xml&quot;);</span></div>
+<div class="line"><span class="lineno">   24</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   25</span> </div>
+<div class="line"><span class="lineno">   26</span>        $xml = simplexml_load_file(<span class="stringliteral">&#39;logs.xml&#39;</span>) or die(&#39;Imposible cargar el fichero XML&#39;);</div>
+<div class="line"><span class="lineno">   27</span>        $numlogin = count($xml-&gt;log-&gt;login);</div>
+<div class="line"><span class="lineno">   28</span>        $ultimoId = $xml-&gt;log-&gt;login[($numlogin - 1)][&#39;<span class="keywordtype">id</span>&#39;];</div>
+<div class="line"><span class="lineno">   29</span> </div>
+<div class="line"><span class="lineno">   30</span>        foreach ($xml-&gt;log as $loge) {</div>
+<div class="line"><span class="lineno">   31</span> </div>
+<div class="line"><span class="lineno">   32</span>            $login = $loge-&gt;addChild(<span class="stringliteral">&#39;login&#39;</span>);</div>
+<div class="line"><span class="lineno">   33</span>            $login-&gt;addAttribute(<span class="stringliteral">&#39;id&#39;</span>, $ultimoId + 1);</div>
+<div class="line"><span class="lineno">   34</span>            $login-&gt;addChild(<span class="stringliteral">&#39;id&#39;</span>, <a class="code hl_variable" href="controller_subida_foto_8php.html#a70b5243de15e10bbfc73053a780b08aa">$_SESSION</a>[<span class="stringliteral">&quot;ID&quot;</span>]);</div>
+<div class="line"><span class="lineno">   35</span>            $login-&gt;addChild(<span class="stringliteral">&#39;nombre&#39;</span>, <a class="code hl_variable" href="controller_subida_foto_8php.html#a70b5243de15e10bbfc73053a780b08aa">$_SESSION</a>[<span class="stringliteral">&quot;nombre&quot;</span>]);</div>
+<div class="line"><span class="lineno">   36</span>            $login-&gt;addChild(<span class="stringliteral">&#39;fecha&#39;</span>, $fecha);</div>
+<div class="line"><span class="lineno">   37</span>            $xml-&gt;asXML(<span class="stringliteral">&#39;logs.xml&#39;</span>);</div>
+<div class="line"><span class="lineno">   38</span>        }</div>
+<div class="line"><span class="lineno">   39</span>    }</div>
+<div class="line"><span class="lineno">   40</span>}</div>
+<div class="ttc" id="acontroller_subida_foto_8php_html_a70b5243de15e10bbfc73053a780b08aa"><div class="ttname"><a href="controller_subida_foto_8php.html#a70b5243de15e10bbfc73053a780b08aa">$_SESSION</a></div><div class="ttdeci">$_SESSION[&quot;foto&quot;]</div><div class="ttdef"><b>Definition:</b> controllerSubidaFoto.php:65</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Martes, 15 de Marzo de 2022 20:01:13 para My Project por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
+</small></address>
+</body>
+</html>

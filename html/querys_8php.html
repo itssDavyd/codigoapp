@@ -1,0 +1,438 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: Referencia del Archivo source/utilities/querys.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.3 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li><li class="navelem"><a class="el" href="dir_6a3f4a93de6832ab3fcb23711763be58.html">utilities</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">Referencia del Archivo querys.php</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a5adaffe3cc37d391974218d3c3dc6335"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="querys_8php.html#a5adaffe3cc37d391974218d3c3dc6335">$GET_POSTS_SQL</a> = 'SELECT P.ID_POST , P.Titulo , P.texto , PE.Nombre as nombrePersona, P.fecha_Post FROM POST as P INNER JOIN Persona as PE ON ID_Persona_Post = ID_Persona;'</td></tr>
+<tr class="separator:a5adaffe3cc37d391974218d3c3dc6335"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7583ec2e5653b10ff00c3e063b8a642"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="querys_8php.html#ab7583ec2e5653b10ff00c3e063b8a642">$GET_ALL_PERSONS_SQL</a> = 'SELECT ID_Persona , Nombre , Apellidos , email , foto, telefono , Provincia , Ciudad , Usuario, Pass FROM Persona'</td></tr>
+<tr class="separator:ab7583ec2e5653b10ff00c3e063b8a642"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada16b1184f9680c3abf8d8db69b8c81a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="querys_8php.html#ada16b1184f9680c3abf8d8db69b8c81a">$GET_PERSON_SQL</a> = 'SELECT ID_Persona , Nombre , Apellidos , email , foto, telefono , Provincia , Ciudad , Usuario, Pass FROM Persona WHERE Usuario = :USER'</td></tr>
+<tr class="separator:ada16b1184f9680c3abf8d8db69b8c81a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d285cf6a4f6324e05b98e50fcdb6302"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="querys_8php.html#a8d285cf6a4f6324e05b98e50fcdb6302">$GET_POST_BY_ID_SQL</a> = 'SELECT P.ID_POST , P.Titulo , P.texto , PE.Nombre as nombrePersona, P.fecha_Post, P.ID_Persona_Post FROM POST as P INNER JOIN Persona as PE ON ID_Persona_Post = ID_Persona WHERE P.ID_POST = :ID_POST'</td></tr>
+<tr class="separator:a8d285cf6a4f6324e05b98e50fcdb6302"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bdb793463dd81eae06031569e273026"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="querys_8php.html#a5bdb793463dd81eae06031569e273026">$GET_COMENTARIOS_BY_ID_SQL</a> = 'SELECT PC.ID_POST_Comentar, concat(PE.Nombre,&quot; &quot;,PE.Apellidos) as nombrePersona , PC.comentario , PC.fecha_comentario FROM POST_PERSONA_COMENTAR as PC INNER JOIN Persona as PE ON PC.ID_Persona_Comentar = PE.ID_Persona WHERE ID_POST_Comentar = :ID_POST;'</td></tr>
+<tr class="separator:a5bdb793463dd81eae06031569e273026"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ccd0744d9c05c5ca108b1c6c4641bb6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="querys_8php.html#a9ccd0744d9c05c5ca108b1c6c4641bb6">$INSERT_USUARIO</a> = 'INSERT INTO Persona (Nombre,Apellidos,email ,telefono,Provincia,Ciudad,Usuario,Pass) VALUES (:NOMBRE,:APELLIDOS,:EMAIL,:TELEFONO,:PROVINCIA,:CIUDAD,:USUARIO,:PASS);'</td></tr>
+<tr class="separator:a9ccd0744d9c05c5ca108b1c6c4641bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd9a0d13e6e53846b8558fdbf37c9fa1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="querys_8php.html#acd9a0d13e6e53846b8558fdbf37c9fa1">$GET_STAT_LOL</a> = &quot;SELECT n_horas ,MMR , rol FROM Cat_Estadistica_LOL WHERE ID_Persona_StatLOL = :ID_PERSONA;&quot;</td></tr>
+<tr class="separator:acd9a0d13e6e53846b8558fdbf37c9fa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ab6e5e0d4d46eff25f59bc754de7ebe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="querys_8php.html#a2ab6e5e0d4d46eff25f59bc754de7ebe">$GET_STAT_CS</a> = &quot;SELECT n_horas ,MMR , n_kills , muertes FROM Cat_Estadistica_CSGO WHERE ID_Persona_StatCSGO = :ID_PERSONA;&quot;</td></tr>
+<tr class="separator:a2ab6e5e0d4d46eff25f59bc754de7ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a73d14cf07ad5f1b9f40b0b49c950e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="querys_8php.html#a8a73d14cf07ad5f1b9f40b0b49c950e6">$INSERT_CREACION_POST_SQL</a> = &quot;INSERT INTO POST (Titulo,Texto,ID_persona_Post,ID_Categoria_Post) VALUES (:titulo,:texto,:id_persona,:id_categoria);&quot;</td></tr>
+<tr class="separator:a8a73d14cf07ad5f1b9f40b0b49c950e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7edb976f31ebc0b327833d1dd2db2259"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="querys_8php.html#a7edb976f31ebc0b327833d1dd2db2259">$GET_CATEGORIAS_SQL</a> = &quot;SELECT ID_Categoria, Nombre_Cat FROM Categoria;&quot;</td></tr>
+<tr class="separator:a7edb976f31ebc0b327833d1dd2db2259"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76163b268ffb733fa1d3d1872ea8b838"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="querys_8php.html#a76163b268ffb733fa1d3d1872ea8b838">$GET_POST_BY_ID_CATEGORIA_SQL</a> = &quot;SELECT P.ID_POST , P.Titulo , P.texto , PE.Nombre as nombrePersona, P.fecha_Post FROM POST as P INNER JOIN Persona as PE ON ID_Persona_Post = ID_Persona where ID_Categoria_Post = :ID_Categoria;&quot;</td></tr>
+<tr class="separator:a76163b268ffb733fa1d3d1872ea8b838"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a600a658806a777641f3ebc03ff87b4c1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="querys_8php.html#a600a658806a777641f3ebc03ff87b4c1">$GET_STAT_RL</a> = &quot;SELECT n_horas , MMR , goles , saves FROM Cat_Estadistica_RL WHERE ID_Persona_StatRL = :ID_PERSONA;&quot;</td></tr>
+<tr class="separator:a600a658806a777641f3ebc03ff87b4c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b932ed3e8ed616dd9bec53c06d982e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="querys_8php.html#a1b932ed3e8ed616dd9bec53c06d982e6">$SET_STAT_LOL</a> = &quot;INSERT INTO Cat_Estadistica_LOL (n_horas,MMR, rol, ID_Persona_StatLOL, ID_Categoria_StatLOL) VALUES (:NHORAS, :MMR, :ROL, :ID_PERSONA, '3')&quot;</td></tr>
+<tr class="separator:a1b932ed3e8ed616dd9bec53c06d982e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbebf0005e7aae27be41d7c78a315e40"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="querys_8php.html#abbebf0005e7aae27be41d7c78a315e40">$SET_STAT_CS</a> = &quot;INSERT INTO Cat_Estadistica_CSGO (n_horas, MMR, n_kills, muertes, ID_Persona_StatCSGO, ID_Categoria_StatCSGO) VALUES (:NHORAS, :MMR, :KILLS, :MUERTES, :ID_PERSONA, '1')&quot;</td></tr>
+<tr class="separator:abbebf0005e7aae27be41d7c78a315e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bdef53dd0eca589c172bc6c0dd7529a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="querys_8php.html#a3bdef53dd0eca589c172bc6c0dd7529a">$SET_STAT_RL</a> = &quot;INSERT INTO Cat_Estadistica_RL (n_horas, MMR, goles, saves, ID_Persona_StatRL, ID_Categoria_StatRL) VALUES (:NHORAS, :MMR, :GOLES, :SAVES, :ID_PERSONA, '2')&quot;</td></tr>
+<tr class="separator:a3bdef53dd0eca589c172bc6c0dd7529a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fc6e86963f3da35f3c54159d66f84e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="querys_8php.html#a0fc6e86963f3da35f3c54159d66f84e2">$UPDATE_STAT_LOL</a> = &quot;UPDATE Cat_Estadistica_LOL SET n_horas = :NHORAS, MMR = :MMR, rol = :ROL WHERE ID_Persona_StatLOL = :ID_PERSONA;&quot;</td></tr>
+<tr class="separator:a0fc6e86963f3da35f3c54159d66f84e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90cc3989111f5189d0923281fdb1b4aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="querys_8php.html#a90cc3989111f5189d0923281fdb1b4aa">$UPDATE_STAT_CS</a> = &quot;UPDATE Cat_Estadistica_CSGO SET n_horas = :NHORAS, MMR = :MMR, n_kills = :KILLS, muertes = :MUERTES WHERE ID_Persona_StatCSGO = :ID_PERSONA;&quot;</td></tr>
+<tr class="separator:a90cc3989111f5189d0923281fdb1b4aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3539c4b45ce488c3b2dd0083c24946a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="querys_8php.html#ac3539c4b45ce488c3b2dd0083c24946a">$UPDATE_STAT_RL</a> = &quot;UPDATE Cat_Estadistica_RL SET n_horas = :NHORAS, MMR = :MMR, goles = :GOLES, saves = :SAVES WHERE ID_Persona_StatRL = :ID_PERSONA;&quot;</td></tr>
+<tr class="separator:ac3539c4b45ce488c3b2dd0083c24946a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acefbcbd6d204f130c95e193c3572e8cf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="querys_8php.html#acefbcbd6d204f130c95e193c3572e8cf">$UPDATE_USUARIO</a> = &quot;UPDATE Persona SET Nombre = :NOMBRE, Apellidos = :APELLIDOS, email = :EMAIL, telefono = :TELEFONO, Provincia = :PROVINCIA, Ciudad = :CIUDAD, Usuario = :USER, Pass = :PASS WHERE ID_Persona = :ID_PERSONA;&quot;</td></tr>
+<tr class="separator:acefbcbd6d204f130c95e193c3572e8cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade2e9cc22eaf9332b632c26891fb14cd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="querys_8php.html#ade2e9cc22eaf9332b632c26891fb14cd">$DELETE_POST_BY_ID</a> = &quot;DELETE FROM POST WHERE ID_POST = :ID_POST;&quot;</td></tr>
+<tr class="separator:ade2e9cc22eaf9332b632c26891fb14cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6367fdc7151f363021aae5c0cf4b96e9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="querys_8php.html#a6367fdc7151f363021aae5c0cf4b96e9">$SET_COMENTARIO</a> = &quot;INSERT INTO POST_PERSONA_COMENTAR (ID_POST_Comentar, ID_Persona_Comentar, comentario) VALUES (:ID_POST, :ID_PERSONA, :COMENTARIO );&quot;</td></tr>
+<tr class="separator:a6367fdc7151f363021aae5c0cf4b96e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af29683663a954e7c9db85ba42a76a3a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="querys_8php.html#af29683663a954e7c9db85ba42a76a3a7">$UPDATE_FOTO</a> = &quot;UPDATE Persona SET foto = :URL_FOTO WHERE ID_Persona = :ID_PERSONA;&quot;</td></tr>
+<tr class="separator:af29683663a954e7c9db85ba42a76a3a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de las variables</h2>
+<a id="ade2e9cc22eaf9332b632c26891fb14cd" name="ade2e9cc22eaf9332b632c26891fb14cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade2e9cc22eaf9332b632c26891fb14cd">&#9670;&nbsp;</a></span>$DELETE_POST_BY_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$DELETE_POST_BY_ID = &quot;DELETE FROM POST WHERE ID_POST = :ID_POST;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab7583ec2e5653b10ff00c3e063b8a642" name="ab7583ec2e5653b10ff00c3e063b8a642"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7583ec2e5653b10ff00c3e063b8a642">&#9670;&nbsp;</a></span>$GET_ALL_PERSONS_SQL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$GET_ALL_PERSONS_SQL = 'SELECT ID_Persona , Nombre , Apellidos , email , foto, telefono , Provincia , Ciudad , Usuario, Pass FROM Persona'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7edb976f31ebc0b327833d1dd2db2259" name="a7edb976f31ebc0b327833d1dd2db2259"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7edb976f31ebc0b327833d1dd2db2259">&#9670;&nbsp;</a></span>$GET_CATEGORIAS_SQL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$GET_CATEGORIAS_SQL = &quot;SELECT ID_Categoria, Nombre_Cat FROM Categoria;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5bdb793463dd81eae06031569e273026" name="a5bdb793463dd81eae06031569e273026"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bdb793463dd81eae06031569e273026">&#9670;&nbsp;</a></span>$GET_COMENTARIOS_BY_ID_SQL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$GET_COMENTARIOS_BY_ID_SQL = 'SELECT PC.ID_POST_Comentar, concat(PE.Nombre,&quot; &quot;,PE.Apellidos) as nombrePersona , PC.comentario , PC.fecha_comentario FROM POST_PERSONA_COMENTAR as PC INNER JOIN Persona as PE ON PC.ID_Persona_Comentar = PE.ID_Persona WHERE ID_POST_Comentar = :ID_POST;'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ada16b1184f9680c3abf8d8db69b8c81a" name="ada16b1184f9680c3abf8d8db69b8c81a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada16b1184f9680c3abf8d8db69b8c81a">&#9670;&nbsp;</a></span>$GET_PERSON_SQL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$GET_PERSON_SQL = 'SELECT ID_Persona , Nombre , Apellidos , email , foto, telefono , Provincia , Ciudad , Usuario, Pass FROM Persona WHERE Usuario = :USER'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a76163b268ffb733fa1d3d1872ea8b838" name="a76163b268ffb733fa1d3d1872ea8b838"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76163b268ffb733fa1d3d1872ea8b838">&#9670;&nbsp;</a></span>$GET_POST_BY_ID_CATEGORIA_SQL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$GET_POST_BY_ID_CATEGORIA_SQL = &quot;SELECT P.ID_POST , P.Titulo , P.texto , PE.Nombre as nombrePersona, P.fecha_Post FROM POST as P INNER JOIN Persona as PE ON ID_Persona_Post = ID_Persona where ID_Categoria_Post = :ID_Categoria;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8d285cf6a4f6324e05b98e50fcdb6302" name="a8d285cf6a4f6324e05b98e50fcdb6302"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d285cf6a4f6324e05b98e50fcdb6302">&#9670;&nbsp;</a></span>$GET_POST_BY_ID_SQL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$GET_POST_BY_ID_SQL = 'SELECT P.ID_POST , P.Titulo , P.texto , PE.Nombre as nombrePersona, P.fecha_Post, P.ID_Persona_Post FROM POST as P INNER JOIN Persona as PE ON ID_Persona_Post = ID_Persona WHERE P.ID_POST = :ID_POST'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5adaffe3cc37d391974218d3c3dc6335" name="a5adaffe3cc37d391974218d3c3dc6335"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5adaffe3cc37d391974218d3c3dc6335">&#9670;&nbsp;</a></span>$GET_POSTS_SQL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$GET_POSTS_SQL = 'SELECT P.ID_POST , P.Titulo , P.texto , PE.Nombre as nombrePersona, P.fecha_Post FROM POST as P INNER JOIN Persona as PE ON ID_Persona_Post = ID_Persona;'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >ALMACEN DE CONSULTAS A REALIZAR: </p>
+
+</div>
+</div>
+<a id="a2ab6e5e0d4d46eff25f59bc754de7ebe" name="a2ab6e5e0d4d46eff25f59bc754de7ebe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ab6e5e0d4d46eff25f59bc754de7ebe">&#9670;&nbsp;</a></span>$GET_STAT_CS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$GET_STAT_CS = &quot;SELECT n_horas ,MMR , n_kills , muertes FROM Cat_Estadistica_CSGO WHERE ID_Persona_StatCSGO = :ID_PERSONA;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acd9a0d13e6e53846b8558fdbf37c9fa1" name="acd9a0d13e6e53846b8558fdbf37c9fa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd9a0d13e6e53846b8558fdbf37c9fa1">&#9670;&nbsp;</a></span>$GET_STAT_LOL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$GET_STAT_LOL = &quot;SELECT n_horas ,MMR , rol FROM Cat_Estadistica_LOL WHERE ID_Persona_StatLOL = :ID_PERSONA;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a600a658806a777641f3ebc03ff87b4c1" name="a600a658806a777641f3ebc03ff87b4c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a600a658806a777641f3ebc03ff87b4c1">&#9670;&nbsp;</a></span>$GET_STAT_RL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$GET_STAT_RL = &quot;SELECT n_horas , MMR , goles , saves FROM Cat_Estadistica_RL WHERE ID_Persona_StatRL = :ID_PERSONA;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8a73d14cf07ad5f1b9f40b0b49c950e6" name="a8a73d14cf07ad5f1b9f40b0b49c950e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a73d14cf07ad5f1b9f40b0b49c950e6">&#9670;&nbsp;</a></span>$INSERT_CREACION_POST_SQL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$INSERT_CREACION_POST_SQL = &quot;INSERT INTO POST (Titulo,Texto,ID_persona_Post,ID_Categoria_Post) VALUES (:titulo,:texto,:id_persona,:id_categoria);&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9ccd0744d9c05c5ca108b1c6c4641bb6" name="a9ccd0744d9c05c5ca108b1c6c4641bb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ccd0744d9c05c5ca108b1c6c4641bb6">&#9670;&nbsp;</a></span>$INSERT_USUARIO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$INSERT_USUARIO = 'INSERT INTO Persona (Nombre,Apellidos,email ,telefono,Provincia,Ciudad,Usuario,Pass) VALUES (:NOMBRE,:APELLIDOS,:EMAIL,:TELEFONO,:PROVINCIA,:CIUDAD,:USUARIO,:PASS);'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6367fdc7151f363021aae5c0cf4b96e9" name="a6367fdc7151f363021aae5c0cf4b96e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6367fdc7151f363021aae5c0cf4b96e9">&#9670;&nbsp;</a></span>$SET_COMENTARIO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$SET_COMENTARIO = &quot;INSERT INTO POST_PERSONA_COMENTAR (ID_POST_Comentar, ID_Persona_Comentar, comentario) VALUES (:ID_POST, :ID_PERSONA, :COMENTARIO );&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abbebf0005e7aae27be41d7c78a315e40" name="abbebf0005e7aae27be41d7c78a315e40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbebf0005e7aae27be41d7c78a315e40">&#9670;&nbsp;</a></span>$SET_STAT_CS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$SET_STAT_CS = &quot;INSERT INTO Cat_Estadistica_CSGO (n_horas, MMR, n_kills, muertes, ID_Persona_StatCSGO, ID_Categoria_StatCSGO) VALUES (:NHORAS, :MMR, :KILLS, :MUERTES, :ID_PERSONA, '1')&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1b932ed3e8ed616dd9bec53c06d982e6" name="a1b932ed3e8ed616dd9bec53c06d982e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b932ed3e8ed616dd9bec53c06d982e6">&#9670;&nbsp;</a></span>$SET_STAT_LOL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$SET_STAT_LOL = &quot;INSERT INTO Cat_Estadistica_LOL (n_horas,MMR, rol, ID_Persona_StatLOL, ID_Categoria_StatLOL) VALUES (:NHORAS, :MMR, :ROL, :ID_PERSONA, '3')&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3bdef53dd0eca589c172bc6c0dd7529a" name="a3bdef53dd0eca589c172bc6c0dd7529a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bdef53dd0eca589c172bc6c0dd7529a">&#9670;&nbsp;</a></span>$SET_STAT_RL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$SET_STAT_RL = &quot;INSERT INTO Cat_Estadistica_RL (n_horas, MMR, goles, saves, ID_Persona_StatRL, ID_Categoria_StatRL) VALUES (:NHORAS, :MMR, :GOLES, :SAVES, :ID_PERSONA, '2')&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af29683663a954e7c9db85ba42a76a3a7" name="af29683663a954e7c9db85ba42a76a3a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af29683663a954e7c9db85ba42a76a3a7">&#9670;&nbsp;</a></span>$UPDATE_FOTO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$UPDATE_FOTO = &quot;UPDATE Persona SET foto = :URL_FOTO WHERE ID_Persona = :ID_PERSONA;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a90cc3989111f5189d0923281fdb1b4aa" name="a90cc3989111f5189d0923281fdb1b4aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90cc3989111f5189d0923281fdb1b4aa">&#9670;&nbsp;</a></span>$UPDATE_STAT_CS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$UPDATE_STAT_CS = &quot;UPDATE Cat_Estadistica_CSGO SET n_horas = :NHORAS, MMR = :MMR, n_kills = :KILLS, muertes = :MUERTES WHERE ID_Persona_StatCSGO = :ID_PERSONA;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0fc6e86963f3da35f3c54159d66f84e2" name="a0fc6e86963f3da35f3c54159d66f84e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fc6e86963f3da35f3c54159d66f84e2">&#9670;&nbsp;</a></span>$UPDATE_STAT_LOL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$UPDATE_STAT_LOL = &quot;UPDATE Cat_Estadistica_LOL SET n_horas = :NHORAS, MMR = :MMR, rol = :ROL WHERE ID_Persona_StatLOL = :ID_PERSONA;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac3539c4b45ce488c3b2dd0083c24946a" name="ac3539c4b45ce488c3b2dd0083c24946a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3539c4b45ce488c3b2dd0083c24946a">&#9670;&nbsp;</a></span>$UPDATE_STAT_RL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$UPDATE_STAT_RL = &quot;UPDATE Cat_Estadistica_RL SET n_horas = :NHORAS, MMR = :MMR, goles = :GOLES, saves = :SAVES WHERE ID_Persona_StatRL = :ID_PERSONA;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acefbcbd6d204f130c95e193c3572e8cf" name="acefbcbd6d204f130c95e193c3572e8cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acefbcbd6d204f130c95e193c3572e8cf">&#9670;&nbsp;</a></span>$UPDATE_USUARIO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$UPDATE_USUARIO = &quot;UPDATE Persona SET Nombre = :NOMBRE, Apellidos = :APELLIDOS, email = :EMAIL, telefono = :TELEFONO, Provincia = :PROVINCIA, Ciudad = :CIUDAD, Usuario = :USER, Pass = :PASS WHERE ID_Persona = :ID_PERSONA;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Martes, 15 de Marzo de 2022 20:01:13 para My Project por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
+</small></address>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuracion>
+    <usuario name="serverRoot">
+        <host>localhost</host>
+        <dbname>notigames</dbname>
+        <user>root</user>
+        <pass></pass>
+    </usuario>
+    <usuario name="Admin">
+        <host>localhost</host>
+        <dbname>notigames</dbname>
+        <user>admin</user>
+        <pass>abc123.</pass>
+    </usuario>
+</configuracion>
+

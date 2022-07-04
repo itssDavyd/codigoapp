@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logs>
+    <log>
+        <login id="1">
+            <id>1</id>
+            <nombre>Administrador</nombre>
+            <fecha>15-03-2022 22:31:59</fecha>
+        </login>
+        <login id="2">
+            <id>1</id>
+            <nombre>Administrador</nombre>
+            <fecha>15-03-2022 22:32:19</fecha>
+        </login>
+        <login id="3">
+            <id>1</id>
+            <nombre>Administrador</nombre>
+            <fecha>15-03-2022 22:39:01</fecha>
+        </login>
+        <login id="4">
+            <id>3</id>
+            <nombre>Jose</nombre>
+            <fecha>15-03-2022 23:15:07</fecha>
+        </login>
+        <login id="5">
+            <id>2</id>
+            <nombre>David</nombre>
+            <fecha>15-03-2022 23:15:32</fecha>
+        </login>
+        <login id="6">
+            <id>1</id>
+            <nombre>Administrador</nombre>
+            <fecha>15-03-2022 23:15:42</fecha>
+        </login>
+        <login id="7">
+            <id>1</id>
+            <nombre>Administrador</nombre>
+            <fecha>15-03-2022 23:15:54</fecha>
+        </login>
+    <login id="8"><id>1</id><nombre>Administrador</nombre><fecha>16-03-2022 15:20:12</fecha></login></log>
+</logs>
